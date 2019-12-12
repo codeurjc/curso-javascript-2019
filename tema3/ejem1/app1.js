@@ -1,12 +1,13 @@
 var myMap = new Map();
-myMap.set('a', 'alpha');
-myMap.set('b', 'beta');
-myMap.set('g', 'gamma');
+myMap.set('a', { name: 'alpha'});
+myMap.set('b', { name: 'beta'});
+myMap.set('g', { name: 'gamma'});
 
-for(let value of myMap.values()){
-	console.log(value);
-}
+console.log(myMap);
 
-//alpha
-//beta
-//gamma
+var myMap2 = new Map();
+myMap2.set('a', new Date(1995,11,17));
+myMap2.set('b', new Date(1920,11,17));
+myMap2.set('g', new Date(2020,10,20));
+
+console.log(myMap2);

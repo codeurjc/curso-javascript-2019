@@ -3,10 +3,10 @@ myMap.set('a', 'alpha');
 myMap.set('b', 'beta');
 myMap.set('g', 'gamma');
 
-for(let key of myMap.keys()){
-	console.log(key,myMap.get(key));
+for(let value of myMap.values()){
+	console.log(value);
 }
 
-//a alpha
-//b beta
-//g gamma
+//alpha
+//beta
+//gamma

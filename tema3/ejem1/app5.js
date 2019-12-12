@@ -1,5 +1,5 @@
-let nombres = ['Pepe','Juanin','Antonio'];
+let nombres = ['Pepe','Juan','Antonio'];
 		
-nombres.sort((s1,s2) => s1.length - s2.length);
+nombres.sort();
 
-console.log(nombres); // ['Pepe', 'Juanin', 'Antonio']
+console.log(nombres); // [Antonio, Juan, Pepe]
