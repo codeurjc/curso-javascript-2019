@@ -1,1 +1,1 @@
-require('./hello.js');
+require('./hello');
