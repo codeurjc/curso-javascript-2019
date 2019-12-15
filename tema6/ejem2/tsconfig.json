@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "out",
+        "allowJs": true
+    },
+    "include": ["*"],
+    "exclude": ["out/**/*"]
+}
