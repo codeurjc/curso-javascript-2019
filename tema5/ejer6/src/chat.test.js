@@ -72,6 +72,7 @@ test('Add user allowed by mediaServer', () => {
     chat.addUser({});
 
     expect(mediaServer.allowMoreUsers).toBeCalled();
+    expect(mediaServer.addUser).toBeCalled();
 });
 
 
