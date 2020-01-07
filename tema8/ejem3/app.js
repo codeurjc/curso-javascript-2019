@@ -8,7 +8,6 @@ const app = express();
 
 app.use(express.json());
 
-let conn;
 let ads;
 
 function toResponse(doc) {
@@ -80,6 +79,7 @@ app.put('/ads/:id', async (req, res) => {
             };
             //Update resource
             await ads.updateOne({ _id: new ObjectId(id) }, { $set: newAd });
+            
             //Return new resource
             newAd.id = id;
             res.json(newAd);
@@ -89,7 +89,7 @@ app.put('/ads/:id', async (req, res) => {
 
 async function dbConnect() {
 
-    conn = await MongoClient.connect(url, {
+    let conn = await MongoClient.connect(url, {
         useUnifiedTopology: true,
         useNewUrlParser: true
     });
