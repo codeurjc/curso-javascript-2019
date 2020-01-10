@@ -1,0 +1,15 @@
+config:
+    target: "https://127.0.0.1:3443"
+    tls:
+      rejectUnauthorized: false
+    phases:
+      - duration: 10
+        arrivalRate: 5
+scenarios:
+    - flow:
+        - get: 
+            url: "/ads/"
+            auth:
+              user: "admin"
+              pass: "pass"
+

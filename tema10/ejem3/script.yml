@@ -1,0 +1,16 @@
+config:
+    environments:
+      production:
+        target: "http://www.ads.es"
+        phases:
+          - duration: 120
+            arrivalRate: 10
+      staging:
+        target: "http://127.0.0.1:3000"
+        phases:
+          - duration: 20
+            arrivalRate: 10
+scenarios:
+    - flow:
+        - get:
+            url: "/ads/"

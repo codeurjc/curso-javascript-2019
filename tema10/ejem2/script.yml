@@ -1,0 +1,13 @@
+config:
+  target: 'https://www.urjc.es'
+  phases:
+    - duration: 20
+      arrivalRate: 20
+  defaults:
+    headers:
+      x-my-service-auth: 'secret'
+scenarios:
+  - flow:
+    - get:
+        url: "/estudios/grado"
+  

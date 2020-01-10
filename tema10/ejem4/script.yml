@@ -1,0 +1,17 @@
+config:
+    target: "http://127.0.0.1:3000"
+    phases:
+      - duration: 20
+        arrivalRate: 10
+    payload:
+      path: "ads.csv"
+      fields:
+        - "message"
+        - "author"
+scenarios:
+    - flow:
+        - post:
+            url: "/ads/"
+            json:
+              message: "{{ message }}"
+              author: "{{ author }}"

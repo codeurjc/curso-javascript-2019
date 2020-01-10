@@ -1,0 +1,22 @@
+config:
+  target: 'https://www.urjc.es'
+  phases:
+    - duration: 20
+      arrivalRate: 20
+scenarios:
+  - name: "Escenario 1"
+    weight: 1 # 1/8 casos
+    flow:
+    - get:
+        url: "/estudios/grado"
+  - name: "Escenario 2"
+    weight: 2 # 2/8 casos
+    flow:
+    - get:
+        url: "/estudiar-en-la-urjc/pruebas-de-acceso"
+  - name: "Escenario 3"
+    weight: 5 # 5/8 casos
+    flow:
+    - get:
+        url: "/intranet-urjc"
+  
