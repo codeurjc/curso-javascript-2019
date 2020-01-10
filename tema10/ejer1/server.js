@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan')
+const morganBody = require('morgan-body');
 
 //Generate unique id for resources
 const uuid = require('uuid/v4');
@@ -9,7 +10,7 @@ const app = express();
 //Convert json bodies to JavaScript object
 app.use(express.json());
 
-app.use(morgan());
+morganBody(app);
 
 //Save info in memory 
 const ads = new Map()

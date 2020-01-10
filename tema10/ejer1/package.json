@@ -4,6 +4,8 @@
     "dependencies": {
         "express": "4.17.1",
         "morgan": "^1.9.1",
+        "morgan-body": "^2.4.8",
+        "save": "^2.4.0",
         "uuid": "3.3.3"
     },
     "devDependencies": {
