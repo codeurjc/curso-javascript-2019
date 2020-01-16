@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 //Save info in memory 
-const ads = new Map();
+const ads = new Map()
 
 app.post('/ads', (req, res) => {
     const ad = req.body;
