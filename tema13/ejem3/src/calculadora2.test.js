@@ -20,9 +20,9 @@ test('testSuma', () => {
 test('testResta', () => {
 
     // Act / When
-    let resultado = calculadora.resta(1, 1);
+    let resultado = calculadora.suma(1, 1);
 
     // Assert / Then
-    expect(resultado).toBe(0);
+    expect(resultado).toBe(2);
 
 });
