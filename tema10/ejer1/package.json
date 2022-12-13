@@ -2,7 +2,7 @@
     "name": "apirest-ejer4",
     "version": "1.0.0",
     "dependencies": {
-        "express": "4.17.1",
+        "express": "4.17.3",
         "morgan": "^1.9.1",
         "morgan-body": "^2.4.8",
         "save": "^2.4.0",
